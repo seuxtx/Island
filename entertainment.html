@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Taniti Entertainment</title>
+</head>
+<body>
+    <header>
+        <div class="nav-con">
+            <nav>
+                <ul class="navc">
+                    <div class="logo">
+                        <a href="index.html"><img src="images/Logo.png" alt="Taniti"></a>
+                     </div>
+                    </li>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About Taniti</a>
+                    </li>
+                    <!-- <li>
+                        <a href="book.html">Book</a>
+                    </li> -->
+                    <li>
+                        <a href="transportation.html">Transportation</a>
+                    </li>
+                    <li>
+                        <a href="entertainment.html" class="active">Entertainment</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact US</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+        <section class="BC">
+            <a href="index.html">Home</a>&gt;
+                <a href="entertainment.html" class="active">Entertainment</a>
+        </section>
+        <div class="main">
+            <button class="open-popup-btn" onclick="openPopup()">Book a Trip</button>
+            <button class="open-faq-btn" onclick="openFAQ()">FAQ</button>
+                <div id="popupForm" class="popup">
+                    <div class="popup-content">
+                        <span class="close-btn" onclick="closePopup()">&times;</span>
+                        <h2>Contact Information</h2>
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <button class="submit-btn" onclick="submitForm()">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="faqPopup" class="popup">
+                <div class="popup-content">
+                <span class="close-btn" onclick="closeFAQ()">&times;</span>
+                <h2>Frequently Requested Information</h2>
+                <div class="faq-content">
+                    <ul>
+                    <li>Power outlets are 120 volts (the same as in the United States).</li>
+                    <li>Alcohol is not allowed to be served or sold between the hours of midnight and 9:00 a.m.</li>
+                    <li>The drinking age on Taniti is 18 and the drinking age is not strictly enforced.</li>
+                    <li>Many younger Tanitians speak fluent English. Very little English is spoken in rural areas, especially by the older residents.</li>
+                    <li>There is one hospital and several clinics. The hospital has many multilingual employees.</li>
+                    <li>Violent crime is very rare on Taniti, but as tourism increases, there are more reports of pickpocketing and other petty crimes.</li>
+                    <li>Taniti enjoys a large number of national holidays, and many tourist attractions and restaurants will be closed on holidays, so visitors should plan accordingly.</li>
+                    <li>Taniti uses the U.S. dollar as its currency, but many businesses will also accept euros and yen. Several banks facilitate currency exchange, and many businesses accept major credit cards.</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+
+                <div class="content">
+                    <div class="food">
+                    <h2>Sight Seeing</h2>
+                    <div class="image">
+                        <img src="images/degleex-ganzorig-wQImoykAwGs-unsplash.jpg">
+                        <p>Photo by <a href="https://unsplash.com/@degleex?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Degleex Ganzorig</a> on <a href="https://unsplash.com/photos/forest-during-daytime-wQImoykAwGs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                    </div>
+                    <p>
+                    If the beach doesn't suit your needs, you can tour the vast rainforests of the island. 
+                    </p>
+                    <h2>Scuba Diving</h2>
+                    <div class="image">
+                        <img src="images/neom-yx7TJle8LhM-unsplash.jpg">
+                        <p>Photo by <a href="https://unsplash.com/@neom?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">NEOM</a> on <a href="https://unsplash.com/photos/a-scuba-diver-swims-through-an-underwater-cave-yx7TJle8LhM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                        </div>
+                    <p>
+                        Take scuba lessons from the locals to view the beautiful reefs that surround the islands.
+                    </p>
+                
+                    <h2>Lodging</h2>
+                    <div class="image">
+                        <img src="images/izuddin-helmi-adnan-tprVEME5sUQ-unsplash.jpg">
+                        <p>Photo by <a href="https://unsplash.com/@izuddinhelmi?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Izuddin Helmi Adnan</a> on <a href="https://unsplash.com/photos/people-sitting-on-white-wooden-bench-during-night-time-tprVEME5sUQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                    </div>
+                    <p>
+                        Taniti hosts beach festivals even night on the weekends. Come out and party with the locals and other tourists.
+                    </p>
+                    
+                </div>
+                <div class="gris">
+                    <h2>Reviews From Past Tourists</h2>
+                    <div class="review">
+                        <h3>Amanda C.</h3>
+                        <ul>
+                            <li>Amazing time spent here, locals were really friendly and the food was amazing here.</li>
+                        </ul>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            
+                        </div>
+                    </div>
+                    <div class="review">
+                        <h3>Scooter G.</h3>
+                        <ul>
+                            <li>My buddies and I enjoyed the beach as we hit the gnarl waves. The beach was clean and beautiful.</li>
+                        </ul>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <h3>Phil S.</h3>
+                        <ul>
+                            <li>Such a nice getaway from the city life. The trail paths through the rainforests are always fun to walk around since you never know what you will see.</li>
+                        </ul>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <h3>Billy B</h3>
+                        <ul>
+                            <li>The time I spent at the restaurants eating such delicious food was phenomenal.</li>
+                        </ul>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <h3>Foster</h3>
+                        <ul>
+                            <li>The island was beautiful with all the attractions offered. The amount of Bees and Honey I have spent is Patrick Swayze. Love from the UK</li>
+                        </ul>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+</body>
+</html>

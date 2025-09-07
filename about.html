@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>About Taniti island</title>
+</head>
+<body>
+    <header>
+        <div class="nav-con">
+            <nav>
+                <ul class="navc">
+                    <div class="logo">
+                        <a href="index.html"><img src="images/Logo.png" alt="Taniti"></a>
+                     </div>
+                    </li>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="active">About Taniti</a>
+                    </li>
+                    <!-- <li>
+                        <a href="book.html">Book</a>
+                    </li> -->
+                    <li>
+                        <a href="transportation.html">Transportation</a>
+                    </li>
+                    <li>
+                        <a href="entertainment.html">Entertainment</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact US</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+        <section class="BC">
+            <a href="index.html">Home</a>&gt;
+                <a href="about.html" class="active">About Taniti</a>
+        </section>
+        
+        <div class="content">
+            
+            <div class="food">
+                <h2>Restaurants</h2>
+                <div class="image">
+                    <img src="images/cassie-gallegos--I9QvRBsvP0-unsplash.jpg">
+                    <p>Photo by <a href="https://unsplash.com/@theadventurebitch?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Cassie Gallegos</a> on <a href="https://unsplash.com/photos/white-table-and-chairs-near-green-palm-tree-during-daytime--I9QvRBsvP0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>   
+                </div>
+                <p>
+                   Taniti currently has 10 restaurants: five serve mostly local fish and rice, three serve American-style meals, and two serve Pan-Asian cuisine. 
+                </p>
+                <h2>Supermarkets</h2>
+                <div class="image">
+                    <img src="images/drew-perales-VPmf56E7-w8-unsplash.jpg">
+                    <p>Photo by <a href="https://unsplash.com/@drewpera?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Drew Perales</a> on <a href="https://unsplash.com/photos/a-store-front-with-a-sign-above-it-VPmf56E7-w8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>   
+                </div>
+                <p>
+                    Taniti has two supermarkets, two smaller grocery stores, and one convenience store that is open 24 hours a day.
+                </p>
+            </div>
+            <div class="Lodge">
+                <h2>Lodging</h2>
+                <div class="image">
+                    <img src="images/paolo-nicolello-2gOxKj594nM-unsplash.jpg">
+                    <p>Photo by <a href="https://unsplash.com/@paul_nic?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Paolo Nicolello</a> on <a href="https://unsplash.com/photos/swimming-pool-near-ocean-2gOxKj594nM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>   
+                </div>
+                <p>
+                    Taniti has a wide variety of lodging that ranges from an inexpensive hostel to one large, four-star resort. There are many small, family-owned hotels and a growing number of bed and breakfasts. All types of lodging are strictly regulated and regularly inspected by the Tanitian government.
+                </p>
+                <button class="lodging"><a href="lodging.html">Lodging Options</a></button>
+            </div>
+            <div class="main">
+                <button class="open-popup-btn" onclick="openPopup()">Book a Trip</button>
+                <button class="open-faq-btn" onclick="openFAQ()">FAQ</button>
+                <div id="popupForm" class="popup">
+                    <div class="popup-content">
+                    <span class="close-btn" onclick="closePopup()">&times;</span>
+                    <h2>Contact Information</h2>
+                    <h3>Book A Trip</h3>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <button class="submit-btn" onclick="submitForm()">Submit</button>
+                    </div>
+                </div>
+                <div id="faqPopup" class="popup">
+                    <div class="popup-content">
+                    <span class="close-btn" onclick="closeFAQ()">&times;</span>
+                    <h2>Frequently Requested Information</h2>
+                    <div class="faq-content">
+                        <ul>
+                        <li>Power outlets are 120 volts (the same as in the United States).</li>
+                        <li>Alcohol is not allowed to be served or sold between the hours of midnight and 9:00 a.m.</li>
+                        <li>The drinking age on Taniti is 18 and the drinking age is not strictly enforced.</li>
+                        <li>Many younger Tanitians speak fluent English. Very little English is spoken in rural areas, especially by the older residents.</li>
+                        <li>There is one hospital and several clinics. The hospital has many multilingual employees.</li>
+                        <li>Violent crime is very rare on Taniti, but as tourism increases, there are more reports of pickpocketing and other petty crimes.</li>
+                        <li>Taniti enjoys a large number of national holidays, and many tourist attractions and restaurants will be closed on holidays, so visitors should plan accordingly.</li>
+                        <li>Taniti uses the U.S. dollar as its currency, but many businesses will also accept euros and yen. Several banks facilitate currency exchange, and many businesses accept major credit cards.</li>
+                        </ul>
+                    </div>
+                    </div>
+            </div>
+        </div>
+         
+        </div>
+        <footer>
+        <div class="foot">
+            
+        </div>
+    </footer>
+    <script src="book.js"></script>
+</body>
+</html>

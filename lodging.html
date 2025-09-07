@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Taniti Island Lodging</title>
+</head>
+<body>
+        <header>
+        <div class="nav-con">
+            <nav>
+                <ul class="navc">
+                    <div class="logo">
+                        <a href="index.html"><img src="images/Logo.png" alt="Taniti"></a>
+                     </div>
+                    </li>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <!-- <li>
+                        <a href="book.html">Book</a>
+                    </li> -->
+                    <li>
+                        <a href="transportation.html">Transportation</a>
+                    </li>
+                    <li>
+                        <a href="entertainment.html">Entertainment</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact US</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+        <section class="BC">
+            <a href="index.html">Home</a>&gt;
+                <a href="about.html" class="active">About Taniti</a>&gt;
+                <a href="lodging.html" class="active">Lodging Options</a>
+        </section>
+        <div class="main">
+            <button class="open-popup-btn" onclick="openPopup()">Book a Trip</button>
+            <button class="open-faq-btn" onclick="openFAQ()">FAQ</button>
+                <div id="popupForm" class="popup">
+                    <div class="popup-content">
+                        <span class="close-btn" onclick="closePopup()">&times;</span>
+                        <h2>Contact Information</h2>
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <button class="submit-btn" onclick="submitForm()">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="faqPopup" class="popup">
+                <div class="popup-content">
+                <span class="close-btn" onclick="closeFAQ()">&times;</span>
+                <h2>Frequently Requested Information</h2>
+                <div class="faq-content">
+                    <ul>
+                    <li>Power outlets are 120 volts (the same as in the United States).</li>
+                    <li>Alcohol is not allowed to be served or sold between the hours of midnight and 9:00 a.m.</li>
+                    <li>The drinking age on Taniti is 18 and the drinking age is not strictly enforced.</li>
+                    <li>Many younger Tanitians speak fluent English. Very little English is spoken in rural areas, especially by the older residents.</li>
+                    <li>There is one hospital and several clinics. The hospital has many multilingual employees.</li>
+                    <li>Violent crime is very rare on Taniti, but as tourism increases, there are more reports of pickpocketing and other petty crimes.</li>
+                    <li>Taniti enjoys a large number of national holidays, and many tourist attractions and restaurants will be closed on holidays, so visitors should plan accordingly.</li>
+                    <li>Taniti uses the U.S. dollar as its currency, but many businesses will also accept euros and yen. Several banks facilitate currency exchange, and many businesses accept major credit cards.</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="gris">
+                    <h2>Beach front Hotel</h2>
+                    <div class="image">
+                        <img src="images/paolo-nicolello-2gOxKj594nM-unsplash.jpg">
+                        <p>Photo by <a href="https://unsplash.com/@paul_nic?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Paolo Nicolello</a> on <a href="https://unsplash.com/photos/swimming-pool-near-ocean-2gOxKj594nM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>   
+                    </div>
+                    <ul>
+                        <li>$190 a night</li>
+                        <li>Pool and free breakfast</li>
+                        <li>Car pool to airport/cruise line</li>
+                        <li><button><a href="lodging.html">Book Now</a></button></li>
+                    </ul> 
+                    <h2>Beach House</h2>
+                    <div class="image">
+                        <img src="images/tu-trinh-eP27iOTYDc4-unsplash.jpg">
+                        <p>Photo by <a href="https://unsplash.com/@tutrinh?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Tu Trinh</a> on <a href="https://unsplash.com/photos/white-and-brown-houses-on-beach-during-daytime-eP27iOTYDc4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>   
+                    </div>
+                    <ul>
+                        <li>$250 a night</li>
+                        <li>Easy access to beach</li>
+                        <li>Shared housing</li> 
+                        <li><button><a href="lodging.html">Book Now</a></button></li>
+                    </ul>
+                    <h2>Non fancy hotel option</h2>
+                    <div class="image">
+                        <img src="images/yosuke-ota-0R1GMsc2E7w-unsplash.jpg">
+                        <p>Photo by <a href="https://unsplash.com/@yosuke_ota?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Yosuke Ota</a> on <a href="https://unsplash.com/photos/a-hotel-room-with-a-bed-and-a-chair-0R1GMsc2E7w?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>   
+                    </div>
+                    <ul>
+                        <li>$70 a night</li>
+                        <li>Simple quiet hotel</li>
+                        <li>No pool</li> 
+                        <li><button><a href="lodging.html">Book Now</a></button></li>
+                    </ul>
+                </div>
+            </div>
+</body>
+</html>

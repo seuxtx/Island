@@ -1,0 +1,356 @@
+html{
+    font-size: 1.5rem;
+}
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: rgb(223, 209, 209);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: rgb(47, 144, 230);
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2.5rem;
+}
+.main{
+    display: flex;
+    justify-content: center;
+}
+h2{
+    color: rgb(2, 121, 22);
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2.5rem;
+}
+p{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1rem;  
+}
+
+/* Navigation */ 
+.logo {
+    height: 150px;
+    margin-right: 20px;
+}
+.logo img {
+            max-height: 100%; 
+            width: auto;
+}
+
+nav {
+    background-color: #034f9b;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 30px;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #3197f0;
+
+}
+
+
+.navc > li {
+    margin-left: 1.5rem;
+}
+
+
+
+.current {
+    
+    background-color: #5dd5da;
+}
+
+/*hyper*/
+
+a {
+    color:rgb(26, 145, 145)
+}
+a:hover{
+    color: greenyellow;
+}
+
+.book{
+    display: block;
+    width: 25%;
+    border: 1px solid #451664;
+    background:rgb(12, 112, 228);
+    text-align: center;
+    text-decoration: none;
+    padding: 0.75rem;;
+}
+.book:hover {
+    background: #A4C100;
+    color: #FFF8D8;
+}
+.book a{
+    color: black;
+}
+.image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image > img {
+    width: auto;
+    height: 600px;
+    border: 1px solid #072E74;
+    border-radius: 45px;
+    
+}
+
+.image > p {
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 0.25rem;
+}
+.side-cont{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 1rem;
+}
+
+.side-cont > .image {
+    min-width: 65%;
+}
+
+.side-cont {
+    margin-left: 1rem;
+}
+
+.content{
+    background-color: #FFF8D8;
+    border:2px solid black;
+    border-radius: 35px;
+    margin: 10px;
+    padding: 10px;
+}
+.foot {
+    background-color: #FFF8D8;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    margin-top: auto; 
+}
+footer {
+    width: 100%;
+ }
+ .lodging{
+        display: block;
+      margin: 20px auto;
+      padding: 15px 20px;
+      background: #ff6f61;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      max-width: 200px;
+ }
+ .lodging a{
+    color: white;
+      text-decoration: none;
+      display: block;
+ }
+ .lodging:hover {
+    background: rgb(252, 204, 48);
+ }
+
+ .gris{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+ }
+ .gris h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #312424;
+    }
+
+    .gris .image img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .gris .image p {
+      font-size: 1rem;
+      color: #666;
+      margin-top: 5px;
+    }
+
+    .gris .image p a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .gris .image p a:hover {
+      text-decoration: underline;
+    }
+
+    .gris ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin: 10px 0;
+    }
+
+    .gris li {
+      margin-bottom: 8px;
+      line-height: 1.5;
+      color: #333;
+    }
+
+    .star {
+        font-size: 24px; 
+        color: #ff8800; 
+        cursor: pointer; 
+        }
+
+ /*button*/ 
+.popup {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .popup-content {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      width: 90%;
+      max-width: 400px;
+      position: relative;
+      max-height: 80vh;
+      overflow-y: auto;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 20px;
+      cursor: pointer;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .close-btn:hover {
+      color: #ff0000;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .submit-btn {
+      background: #007bff;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .submit-btn:hover {
+      background: #0056b3;
+    }
+
+    
+    .open-popup-btn, .open-faq-btn {
+      position: fixed;
+      right: 20px;
+      padding: 15px 20px;
+      background: #28a745;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      z-index: 999;
+      font-size: 16px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .open-popup-btn {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .open-faq-btn {
+      top: calc(50% + 60px); 
+      transform: translateY(-50%);
+      background: #17a2b8; 
+    }
+
+    .open-popup-btn:hover {
+      background: #218838;
+    }
+
+    .open-faq-btn:hover {
+      background: #138496;
+    }
+
+    .faq-content ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    .faq-content li {
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }

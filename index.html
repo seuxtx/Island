@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Taniti island</title>
+    
+</head>
+<body>
+    <header>
+        <div class="nav-con">
+            <nav>
+                <ul class="navc">
+                    <div class="logo">
+                        <a href="index.html"><img src="images/Logo.png" alt="Taniti"></a>
+                     </div>
+                    </li>
+                    <li>
+                        <a href="index.html" class="active">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About Taniti</a>
+                    </li>
+                    <!-- <li>
+                        <a href="book.html">Book</a> no longer needed since of java script
+                    </li> -->
+                    <li>
+                        <a href="transportation.html">Transportation</a>
+                    </li>
+                    <li>
+                        <a href="entertainment.html">Entertainment</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact US</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="main">
+            <button class="open-popup-btn" onclick="openPopup()">Book a Trip</button>
+            <button class="open-faq-btn" onclick="openFAQ()">FAQ</button>
+                <div id="popupForm" class="popup">
+                    <div class="popup-content">
+                        <span class="close-btn" onclick="closePopup()">&times;</span>
+                        <h2>Contact Information</h2>
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <button class="submit-btn" onclick="submitForm()">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <div id="faqPopup" class="popup">
+                <div class="popup-content">
+                <span class="close-btn" onclick="closeFAQ()">&times;</span>
+                <h2>Frequently Requested Information</h2>
+                <div class="faq-content">
+                    <ul>
+                    <li>Power outlets are 120 volts (the same as in the United States).</li>
+                    <li>Alcohol is not allowed to be served or sold between the hours of midnight and 9:00 a.m.</li>
+                    <li>The drinking age on Taniti is 18 and the drinking age is not strictly enforced.</li>
+                    <li>Many younger Tanitians speak fluent English. Very little English is spoken in rural areas, especially by the older residents.</li>
+                    <li>There is one hospital and several clinics. The hospital has many multilingual employees.</li>
+                    <li>Violent crime is very rare on Taniti, but as tourism increases, there are more reports of pickpocketing and other petty crimes.</li>
+                    <li>Taniti enjoys a large number of national holidays, and many tourist attractions and restaurants will be closed on holidays, so visitors should plan accordingly.</li>
+                    <li>Taniti uses the U.S. dollar as its currency, but many businesses will also accept euros and yen. Several banks facilitate currency exchange, and many businesses accept major credit cards.</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+    </div>
+
+    <div >
+        <h1>Taniti Island</h1>
+    </div>
+    <div class="content">
+        <div class="image">
+            <img src="images/hari-nandakumar-VX88azaKEno-unsplash.jpg">
+            <p>Photo by <a href="https://unsplash.com/@hariprasad000?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Hari Nandakumar</a> on <a href="https://unsplash.com/photos/palm-tree-near-body-of-water-during-daytime-VX88azaKEno?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+      </p>
+        </div>
+        <div class="side-cont">
+            <p>
+                Taniti is a small, tropical island in the Pacific. While the island
+                has an area of less than 500 square miles, the terrain is varied
+                and includes both sandy and rocky beaches, a small but safe harbor,
+                lush tropical rainforests, and a mountainous interior that includes
+                a small, active volcano. Taniti has an indigenous population of
+                about 20,000. Until a recent increase in tourism, most the Tanitian
+                economy was dominated by fishing or agriculture
+             </p>
+        </div>
+
+    <footer>
+        <div class="foot">
+            
+            
+        </div>
+    </footer>
+    <script src="book.js"></script>
+</body>
+</html>
